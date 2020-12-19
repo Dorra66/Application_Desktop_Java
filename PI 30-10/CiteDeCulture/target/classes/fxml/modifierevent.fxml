@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="543.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.ModifiereventController">
+   <children>
+      <ImageView fitHeight="480.0" fitWidth="784.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../../images/cite.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="158.0" layoutY="61.0" text="Event Name" textFill="BLUE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <TextField fx:id="modname1" layoutX="289.0" layoutY="58.0" />
+      <TextField fx:id="modcateg1" layoutX="289.0" layoutY="126.0" />
+      <TextField fx:id="modplace1" layoutX="289.0" layoutY="211.0" />
+      <DatePicker fx:id="moddate1" layoutX="289.0" layoutY="282.0" />
+      <ComboBox fx:id="modheure1" layoutX="289.0" layoutY="360.0" prefWidth="150.0" />
+      <TextField fx:id="modaffiche1" layoutX="289.0" layoutY="418.0" />
+      <Button fx:id="importaff1" layoutX="455.0" layoutY="418.0" mnemonicParsing="false" onAction="#importaff" text="Import" />
+      <Button fx:id="updateevent1" layoutX="337.0" layoutY="476.0" mnemonicParsing="false" onAction="#updateevent" text="Update" />
+      <Label layoutX="152.0" layoutY="214.0" text="Number Of Places" textFill="BLUE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="152.0" layoutY="286.0" text="Event Date" textFill="BLUE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="152.0" layoutY="364.0" text="Hour" textFill="BLUE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="152.0" layoutY="422.0" text="Poster" textFill="BLUE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="259.0" layoutY="14.0" text="Modify Event" textFill="BLUE">
+         <font>
+            <Font name="Jokerman" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="158.0" layoutY="130.0" text="Category" textFill="BLUE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

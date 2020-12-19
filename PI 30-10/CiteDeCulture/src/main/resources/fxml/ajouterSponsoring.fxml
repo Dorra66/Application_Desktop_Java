@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.AjouterSponsoringController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/2.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="167.0" layoutY="33.0" text="Ajouter Sponsoring" textFill="#df69a2">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label layoutX="301.0" layoutY="153.0" text="date_contrat :" />
+      <DatePicker fx:id="dp5" layoutX="396.0" layoutY="149.0" promptText="date du contrat" />
+      <Label layoutX="301.0" layoutY="214.0" text="description" />
+      <Button fx:id="btna3" layoutX="255.0" layoutY="350.0" mnemonicParsing="false" text="Ajouter">
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/aj.jpg" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="r9" layoutX="457.0" layoutY="350.0" mnemonicParsing="false" text="Retour">
+         <graphic>
+            <ImageView fitHeight="36.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ret.jpg" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <ImageView fitHeight="183.0" fitWidth="284.0" layoutX="4.0" layoutY="122.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/spon.jpg" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="txta12" layoutX="383.0" layoutY="206.0" prefHeight="129.0" prefWidth="200.0" promptText="Insérer une description" />
+   </children>
+</AnchorPane>

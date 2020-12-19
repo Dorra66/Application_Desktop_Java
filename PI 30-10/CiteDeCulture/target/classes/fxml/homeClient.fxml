@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="461.0" prefWidth="644.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.HomeClientController">
+   <children>
+      <ImageView fitHeight="461.0" fitWidth="644.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../../images/cité.jpg" />
+         </image>
+      </ImageView>
+      <TabPane layoutX="8.0" layoutY="7.0" prefHeight="413.0" prefWidth="538.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Events">
+               <content>
+                  <AnchorPane prefHeight="364.0" prefWidth="574.0">
+                     <children>
+                        <Button fx:id="consultermyevents" mnemonicParsing="false" onAction="#consultevents" prefHeight="102.0" prefWidth="230.0" text="Consult Events" textFill="BLUE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="31.0" fitWidth="43.0" layoutX="95.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@52212685-ecran-de-l-ordinateur-icône-logo-d-affichage-de-l-ordinateur-symbole-d-affichage-de-l-or.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="357.0" fitWidth="247.0" layoutX="-9.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+          <Tab text="Reservation">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="ajoutermyreservation" layoutX="-5.0" mnemonicParsing="false" onAction="#ajoutermyreservation" prefHeight="102.0" prefWidth="230.0" text="Add Reservation" textFill="BLUE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="31.0" fitWidth="36.0" layoutX="94.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@500_F_223337935_Hs7QwyiXNQ7fgxDY6o7aP33Uq6DjEKzM.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="My Participations">
+               <content>
+                  <AnchorPane prefHeight="400.0" prefWidth="633.0">
+                     <children>
+                        <Button fx:id="consultermesparticipations" mnemonicParsing="false" onAction="#consultermesparticip" prefHeight="102.0" prefWidth="230.0" text="Consult My Participations" textFill="BLUE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="35.0" fitWidth="36.0" layoutX="80.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@52212685-ecran-de-l-ordinateur-icône-logo-d-affichage-de-l-ordinateur-symbole-d-affichage-de-l-or.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="My Feed_Backs">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="consultermesavi" mnemonicParsing="false" onAction="#consultermesavis" prefHeight="102.0" prefWidth="230.0" text="Consult My Feed_Backs" textFill="BLUE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="36.0" fitWidth="37.0" layoutX="88.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@52212685-ecran-de-l-ordinateur-icône-logo-d-affichage-de-l-ordinateur-symbole-d-affichage-de-l-or.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Button fx:id="HomeBackClient1" layoutX="569.0" layoutY="54.0" mnemonicParsing="false" onAction="#HomeBackClient1" text="Home" />
+   </children>
+</AnchorPane>

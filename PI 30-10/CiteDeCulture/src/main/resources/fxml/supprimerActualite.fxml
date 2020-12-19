@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.SupprimerActualiteController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/re.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="194.0" layoutY="25.0" text="Supprimer Actualité" textFill="#f889f4">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label layoutX="89.0" layoutY="124.0" text="id :" />
+      <Button fx:id="btna4" layoutX="252.0" layoutY="222.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="156.0" text="Supprimer">
+         <graphic>
+            <ImageView fitHeight="44.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/supp.jpg" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <TextField fx:id="txta13" layoutX="133.0" layoutY="120.0" promptText="id" />
+      <Button fx:id="r4" layoutX="489.0" layoutY="329.0" mnemonicParsing="false" text="Retour">
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ret.jpg" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="376.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/e.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

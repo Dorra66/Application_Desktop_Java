@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.RepondreReclamationCController">
+   <children>
+      <ImageView fitHeight="446.0" fitWidth="607.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@BG/m7.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="object_aff_rec" editable="false" layoutX="61.0" layoutY="93.0" opacity="0.88" prefHeight="51.0" prefWidth="509.0" promptText="Sans objet.." />
+      <TextField fx:id="aff_rec_txtarea" editable="false" layoutX="61.0" layoutY="148.0" opacity="0.88" prefHeight="120.0" prefWidth="509.0" promptText="Contenue vide" />
+      <Label layoutX="61.0" layoutY="62.0" prefHeight="17.0" prefWidth="104.0" text="Date of sending :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="date_env_rec" layoutX="165.0" layoutY="62.0" prefHeight="17.0" prefWidth="213.0" text="Label" />
+      <Label layoutX="60.0" layoutY="46.0" prefHeight="17.0" prefWidth="56.0" text="Sent by :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="id_env_rec" layoutX="112.0" layoutY="45.0" prefHeight="17.0" prefWidth="220.0" text="Label" />
+      <TextArea fx:id="textarea_rep" layoutX="60.0" layoutY="314.0" opacity="0.88" prefHeight="58.0" prefWidth="509.0" promptText="Reponse :" />
+      <Button fx:id="btn_rep_rec" layoutX="177.0" layoutY="274.0" mnemonicParsing="false" onAction="#onclickRepondreReclamation" prefHeight="33.0" prefWidth="135.0" text="Reply" />
+      <Button fx:id="btn_anl_rep" layoutX="316.0" layoutY="274.0" mnemonicParsing="false" onAction="#onClickAnullerReponse" prefHeight="33.0" prefWidth="135.0" text="    Cancel" />
+      <ImageView fitHeight="27.0" fitWidth="32.0" layoutX="195.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IconM/send.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="36.0" layoutX="342.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IconM/error.png" />
+         </image></ImageView>
+   </children>
+</AnchorPane>

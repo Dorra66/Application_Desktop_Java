@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.BookdataavailController">
+   <children>
+      <TableView fx:id="BookTable" prefHeight="431.0" prefWidth="688.0">
+        <columns>
+          <TableColumn fx:id="colTitle" prefWidth="137.60003662109375" text="Title" />
+          <TableColumn fx:id="colAuthor" prefWidth="111.199951171875" text="Author" />
+            <TableColumn fx:id="colType" prefWidth="114.39996337890625" text="Type" />
+            <TableColumn fx:id="colDate" prefWidth="98.39996337890625" text="Date " />
+            <TableColumn fx:id="colImage" prefWidth="118.4000244140625" text="Image" />
+            <TableColumn fx:id="colAvail" prefWidth="106.39996337890625" text="Available" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

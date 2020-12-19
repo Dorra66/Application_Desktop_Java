@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="565.0" prefWidth="747.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.AffichageParticipationController">
+   <children>
+      <ImageView fitHeight="483.0" fitWidth="747.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../../images/cite.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="565.0" fitWidth="747.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="81.44287109375" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="65.0">
+         <image>
+            <Image url="@francais_image2_61487_1521882197.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="affichpart" layoutX="30.0" layoutY="65.0" prefHeight="335.0" prefWidth="320.0">
+        <columns>
+          <TableColumn fx:id="idpart" prefWidth="104.0" text="Id Participation" />
+          <TableColumn fx:id="idevent" prefWidth="109.0" text="Id Event" />
+            <TableColumn fx:id="iduser" prefWidth="105.0" text="Id User" />
+        </columns>
+      </TableView>
+      <TextField fx:id="totalpart" layoutX="30.0" layoutY="457.0" promptText="Total Participations" />
+      <TextField fx:id="nameevent" layoutX="30.0" layoutY="406.0" promptText="Name Event" />
+      <Button fx:id="deletepart" layoutX="287.0" layoutY="425.0" mnemonicParsing="false" onAction="#deleteParticip" text="Delete" />
+      <Label layoutX="272.0" layoutY="14.0" text="List Of Participations" textFill="BLUE">
+         <font>
+            <Font name="Jokerman" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="Home2" layoutX="669.0" layoutY="52.0" mnemonicParsing="false" onAction="#HomeBack2" text="Home" />
+   </children>
+</AnchorPane>

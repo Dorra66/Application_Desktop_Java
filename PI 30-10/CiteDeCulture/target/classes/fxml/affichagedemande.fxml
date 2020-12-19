@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="1708.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.AffichagedemandeController">
+   <children>
+      <ImageView fitHeight="548.0" fitWidth="1082.0" layoutX="150.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../../images/cite.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="689.0" fitWidth="1350.0" layoutX="4.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@francais_image2_61487_1521882197.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="affichedemande" layoutX="14.0" layoutY="84.0" prefHeight="258.0" prefWidth="1340.0">
+        <columns>
+          <TableColumn fx:id="idreserv" prefWidth="60.0" text="IdReserv" />
+          <TableColumn fx:id="orgname" prefWidth="81.0" text="Org.Name" />
+            <TableColumn fx:id="orglastname" prefWidth="95.0" text="Org.LastName" />
+            <TableColumn fx:id="orgtel" prefWidth="104.0" text="Org.Phone.Num" />
+            <TableColumn fx:id="orgmail" prefWidth="181.0" text="Org.Mail" />
+            <TableColumn fx:id="categorie" minWidth="6.0" prefWidth="120.0" text="Category" />
+            <TableColumn fx:id="namereserv" prefWidth="184.0" text="Name.Resev" />
+            <TableColumn fx:id="nbrplace" minWidth="0.0" prefWidth="102.0" text="NumberOfPlaces" />
+            <TableColumn fx:id="datereserv" prefWidth="112.0" text="Date" />
+            <TableColumn fx:id="heure" prefWidth="95.0" text="Hour" />
+            <TableColumn fx:id="affiche" prefWidth="113.0" text="Poster" />
+            <TableColumn fx:id="etat" prefWidth="92.0" text="State" />
+        </columns>
+      </TableView>
+      <Label layoutX="311.0" layoutY="7.0" text="List Of Reservation Requests" textFill="BLUE">
+         <font>
+            <Font name="Jokerman" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="suppdemande" layoutX="1073.0" layoutY="372.0" mnemonicParsing="false" onAction="#deleteDemande" text="Delete" />
+      <Label layoutX="421.0" layoutY="363.0" text="State" />
+      <ComboBox fx:id="combostate" layoutX="490.0" layoutY="359.0" prefWidth="150.0" />
+      <Button fx:id="showetat" layoutX="547.0" layoutY="402.0" mnemonicParsing="false" onAction="#updateetat" text="Edit" />
+      <Button fx:id="showReserv" layoutX="967.0" layoutY="372.0" mnemonicParsing="false" onAction="#showetat" text="Show" />
+      <Button fx:id="retourajout" layoutX="42.0" layoutY="39.0" mnemonicParsing="false" onAction="#homeResquest" text="Add Request" />
+      <TextField fx:id="searchetat" layoutX="863.0" layoutY="27.0" promptText="search" />
+      <Button fx:id="homeback" layoutX="1124.0" layoutY="27.0" mnemonicParsing="false" onAction="#Home" text="Home" />
+   </children>
+</AnchorPane>

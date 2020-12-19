@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="875.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.MesparticipationsController">
+   <children>
+      <ImageView fitHeight="550.0" fitWidth="875.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../../images/cite.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableEvent" layoutX="26.0" layoutY="49.0" prefHeight="307.0" prefWidth="481.0">
+        <columns>
+          <TableColumn fx:id="nameEvent" prefWidth="203.0" text="Event" />
+          <TableColumn fx:id="dateEvent" prefWidth="277.0" text="Date" />
+        </columns>
+      </TableView>
+      <Button fx:id="suppparticip" layoutX="220.0" layoutY="370.0" mnemonicParsing="false" onAction="#supprimerMaParticipation" text="Delete Participation" />
+      <Label layoutX="517.0" layoutY="167.0" text="FeedBack Description" textFill="BLUE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <TextArea fx:id="descripavis" layoutX="662.0" layoutY="67.0" prefHeight="200.0" prefWidth="200.0" promptText="Insert feed_back" />
+      <Button fx:id="ajoutavis" layoutX="713.0" layoutY="279.0" mnemonicParsing="false" onAction="#ajouterAvis" text="Add Feed_Back" />
+      <Label layoutX="323.0" text="My Participations" textFill="BLUE">
+         <font>
+            <Font name="Jokerman" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="homeClient" layoutX="799.0" layoutY="36.0" mnemonicParsing="false" onAction="#HomeClient" text="Home" />
+   </children>
+</AnchorPane>

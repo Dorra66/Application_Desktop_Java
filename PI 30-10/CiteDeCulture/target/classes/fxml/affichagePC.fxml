@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="471.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.AffichagePCController">
+   <children>
+      <ImageView fitHeight="471.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/3.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tablea2c" layoutX="21.0" layoutY="14.0" prefHeight="281.0" prefWidth="558.0">
+        <columns>
+          <TableColumn fx:id="c1c" prefWidth="88.0" text="id" />
+          <TableColumn fx:id="c2c" prefWidth="112.800048828125" text="titre" />
+            <TableColumn fx:id="c3c" prefWidth="190.39996337890625" text="description" />
+            <TableColumn fx:id="cc" prefWidth="168.79998779296875" text="image" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="img1c" fitHeight="150.0" fitWidth="200.0" layoutX="369.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="retouuur" layoutX="33.0" layoutY="418.0" mnemonicParsing="false" text="Retour">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ret.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="act2c" layoutX="33.0" layoutY="347.0" mnemonicParsing="false" text="Actualiser">
+         <graphic>
+            <ImageView fitHeight="36.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ic_arrow_round_change.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnstatc" layoutX="232.0" layoutY="369.0" mnemonicParsing="false" text="Statistiques">
+         <graphic>
+            <ImageView fitHeight="46.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/depositphotos_10964176-stock-photo-3d-circular-diagram.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

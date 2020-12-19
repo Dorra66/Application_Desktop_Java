@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="536.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.AffichageSponController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="536.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/2.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tabb" layoutX="7.0" layoutY="22.0" prefHeight="334.0" prefWidth="514.0">
+        <columns>
+          <TableColumn fx:id="colid" prefWidth="84.800048828125" text="id" />
+          <TableColumn fx:id="coldate" prefWidth="228.79998779296875" text="date contrat" />
+            <TableColumn fx:id="coldes" prefWidth="198.39996337890625" text="description" />
+        </columns>
+      </TableView>
+      <Button fx:id="r10" layoutX="395.0" layoutY="361.0" mnemonicParsing="false" text="Retour">
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ret.jpg" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+   </children>
+</AnchorPane>

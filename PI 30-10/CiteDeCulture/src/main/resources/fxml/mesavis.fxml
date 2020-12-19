@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="430.0" prefWidth="659.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.MesavisController">
+   <children>
+      <ImageView fitHeight="437.0" fitWidth="659.0" layoutX="1.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../../images/cite.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="affavis" layoutX="10.0" layoutY="69.0" prefHeight="221.0" prefWidth="550.0">
+        <columns>
+          <TableColumn fx:id="descavis" prefWidth="549.0" text="Description" />
+        </columns>
+      </TableView>
+      <Button fx:id="suppavis" layoutX="259.0" layoutY="322.0" mnemonicParsing="false" onAction="#suppAvis" text="Delete" />
+      <Label layoutX="217.0" layoutY="14.0" text="My Feed_Back" textFill="BLUE">
+         <font>
+            <Font name="Jokerman" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="homeback" layoutX="582.0" layoutY="69.0" mnemonicParsing="false" onAction="#HomeClient" text="Home" />
+   </children>
+</AnchorPane>

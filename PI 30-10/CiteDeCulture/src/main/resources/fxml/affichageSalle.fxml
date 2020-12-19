@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="587.0" prefWidth="781.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.AffichageSalleController">
+   <children>
+      <ImageView fitHeight="529.0" fitWidth="892.0" layoutX="10.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../../images/cite.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="629.0" fitWidth="898.0" layoutX="6.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@francais_image2_61487_1521882197.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="afficheSalle" layoutX="29.0" layoutY="88.0" prefHeight="359.0" prefWidth="485.0">
+        <columns>
+          <TableColumn fx:id="IdSalle" prefWidth="64.0" text="IdRoom" />
+          <TableColumn fx:id="libelle" prefWidth="116.0" text="Name" />
+            <TableColumn fx:id="capacite" prefWidth="136.0" text="Capacity" />
+            <TableColumn fx:id="categorie" prefWidth="168.0" text="Category" />
+        </columns>
+      </TableView>
+      <Label layoutX="323.0" layoutY="14.0" text="List Of Rooms" textFill="BLUE">
+         <font>
+            <Font name="Jokerman" size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="suppsalle" layoutX="443.0" layoutY="458.0" mnemonicParsing="false" onAction="#deleteRow" text="Delete" />
+      <Button fx:id="showsalle" layoutX="362.0" layoutY="458.0" mnemonicParsing="false" onAction="#show" text="Show" />
+      <Button fx:id="retourajout" layoutX="40.0" layoutY="56.0" mnemonicParsing="false" onAction="#showajout" text="Add Room" />
+      <Button fx:id="homeback1" layoutX="678.0" layoutY="63.0" mnemonicParsing="false" onAction="#HomeBack1" prefHeight="34.0" prefWidth="73.0" text="Home" />
+   </children>
+</AnchorPane>

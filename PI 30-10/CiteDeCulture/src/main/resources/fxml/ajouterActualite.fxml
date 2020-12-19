@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.AjouterActualiteController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/re.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="57.0" layoutY="42.0" text="Ajouter Actualité" textFill="#d886df">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label graphicTextGap="5.0" layoutX="20.0" layoutY="139.0" text="DATE DEBUT :" textFill="#0e0e0e" />
+      <DatePicker fx:id="dp1" layoutX="95.0" layoutY="135.0" promptText="date de début" />
+      <Label layoutX="21.0" layoutY="192.0" text="DATE FIN :" textFill="#111010" />
+      <DatePicker fx:id="dpa2" layoutX="94.0" layoutY="187.0" promptText="date de fin" />
+      <Label layoutX="9.0" layoutY="248.0" text="DESCRIPTION :" textFill="#0e0e0e" />
+      <Label layoutX="331.0" layoutY="147.0" text="TITRE :" textFill="#161515">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <TextField fx:id="txta2" layoutX="392.0" layoutY="144.0" promptText="titre" />
+      <Button fx:id="btna1" layoutX="346.0" layoutY="335.0" mnemonicParsing="false" text="Ajouter">
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/aj.jpg" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label layoutX="321.0" layoutY="204.0" text="IMAGE :" textFill="#131313" />
+      <TextField fx:id="txtn1" layoutX="386.0" layoutY="200.0" promptText="Insérer une image" />
+      <Button fx:id="btnn1" layoutX="479.0" layoutY="244.0" mnemonicParsing="false" text="Importer" />
+      <Button fx:id="r1" layoutX="466.0" layoutY="337.0" mnemonicParsing="false" text="Retour">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ret.jpg" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <ImageView fitHeight="88.0" fitWidth="252.0" layoutX="281.0" layoutY="19.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/jj.jpg" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="txta1" layoutX="94.0" layoutY="248.0" prefHeight="123.0" prefWidth="211.0" promptText="Ajouter une description" />
+   </children>
+</AnchorPane>

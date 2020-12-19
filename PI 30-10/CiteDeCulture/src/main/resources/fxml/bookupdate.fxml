@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="555.0" prefWidth="1097.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.BookupdateController">
+   <children>
+      <TableView fx:id="BookTable" layoutX="48.0" layoutY="88.0" prefHeight="400.0" prefWidth="827.0">
+        <columns>
+          <TableColumn fx:id="colTitle" prefWidth="119.99996793270111" text="Title" />
+          <TableColumn fx:id="colAuthor" prefWidth="131.2000503540039" text="Author" />
+            <TableColumn fx:id="colType" prefWidth="132.0" text="Type" />
+            <TableColumn fx:id="colDate" prefWidth="128.79995727539062" text="Date" />
+            <TableColumn fx:id="colImage" prefWidth="144.00006103515625" text="Image" />
+            <TableColumn fx:id="colAvail" prefWidth="169.60003662109375" text="Availabilty" />
+        </columns>
+      </TableView>
+      <TextField fx:id="TitleInput" layoutX="261.0" layoutY="38.0" onKeyTyped="#searchBook" prefHeight="35.0" prefWidth="472.0" promptText="Search" />
+      <ImageView fitHeight="35.0" fitWidth="52.0" layoutX="207.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/3081264711536837883-128.png" />
+         </image>
+      </ImageView>
+      <HBox layoutX="261.0" layoutY="507.0" prefHeight="42.0" prefWidth="305.0" />
+      <Button fx:id="btnUpdate" layoutX="909.0" layoutY="348.0" mnemonicParsing="false" onAction="#toBookUpdateForm" prefHeight="42.0" prefWidth="167.0" text="Upadte" />
+      <Button fx:id="btnBack" layoutX="909.0" layoutY="288.0" mnemonicParsing="false" onAction="#BackHome10" prefHeight="42.0" prefWidth="167.0" text="Back" />
+      <ImageView fitHeight="42.0" fitWidth="64.0" layoutX="824.0" layoutY="35.0" onMouseClicked="#showBookData" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Refresh.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="txtBookImage" fitHeight="256.0" fitWidth="210.0" layoutX="884.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

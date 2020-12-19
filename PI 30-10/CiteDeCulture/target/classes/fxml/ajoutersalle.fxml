@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="456.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.AjoutersalleController">
+   <children>
+      <ImageView fitHeight="364.0" fitWidth="642.0" layoutX="2.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../../images/cite.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="400.0" fitWidth="600.0" layoutX="2.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@francais_image2_61487_1521882197.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="219.0" layoutY="14.0" text="Add Room" textFill="BLUE">
+         <font>
+            <Font name="Jokerman" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="131.0" layoutY="99.0" text="Name:" textFill="BLUE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="ajoutersalle" layoutX="273.0" layoutY="316.0" mnemonicParsing="false" text="Add">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="libelle" layoutX="227.0" layoutY="100.0" />
+      <TextField fx:id="capacite" layoutX="233.0" layoutY="184.0" />
+      <TextField fx:id="categorie" layoutX="233.0" layoutY="269.0" />
+      <Label layoutX="118.0" layoutY="183.0" text="Capacity :" textFill="BLUE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="116.0" layoutY="268.0" text="Category :" textFill="BLUE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

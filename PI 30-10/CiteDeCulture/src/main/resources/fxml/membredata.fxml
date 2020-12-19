@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.MembredataController">
+   <children>
+      <TableView fx:id="MembreTable" prefHeight="431.0" prefWidth="738.0">
+        <columns>
+          <TableColumn fx:id="colName" prefWidth="99.20001220703125" text="Name" />
+          <TableColumn fx:id="colLastName" prefWidth="105.59998321533203" text="LastName" />
+            <TableColumn fx:id="colCin" prefWidth="88.0" text="Cin" />
+            <TableColumn fx:id="colMobile" prefWidth="115.20001220703125" text="Mobile" />
+            <TableColumn fx:id="colMail" prefWidth="105.59994506835938" text="Mail" />
+            <TableColumn fx:id="colAdress" prefWidth="93.5999755859375" text="Adress" />
+            <TableColumn fx:id="colSubscriptionDate" prefWidth="130.39999999999998" text="SubscriptionDate" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

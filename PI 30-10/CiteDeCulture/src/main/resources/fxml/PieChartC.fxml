@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="fxml.PieChartCController">
+   <children>
+      <ImageView fitHeight="406.0" fitWidth="600.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/3.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="retchartc" layoutX="247.0" layoutY="350.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="110.0" text="Retour">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ret.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <PieChart fx:id="piechartc" layoutX="7.0" layoutY="6.0" prefHeight="334.0" prefWidth="588.0" />
+   </children>
+</AnchorPane>

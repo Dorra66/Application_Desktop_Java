@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="523.0" prefWidth="706.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.AfficherActualiteController">
+   <children>
+      <ImageView fitHeight="523.0" fitWidth="706.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/re.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tablea1" layoutX="10.0" layoutY="19.0" prefHeight="334.0" prefWidth="699.0">
+        <columns>
+          <TableColumn fx:id="coldate_Début" prefWidth="121.60003662109375" text="dt debut" />
+          <TableColumn fx:id="coldate_Fin" prefWidth="85.5999755859375" text="de fin" />
+            <TableColumn fx:id="colid" prefWidth="56.0" text="id" />
+            <TableColumn fx:id="coldescription" prefWidth="132.0" text="desc" />
+            <TableColumn fx:id="coltitre" prefWidth="144.80001831054688" text="titre" />
+            <TableColumn fx:id="colImage1" prefWidth="158.4000244140625" text="imge" />
+        </columns>
+      </TableView>
+      <Button fx:id="r2" layoutX="83.0" layoutY="460.0" mnemonicParsing="false" text="Retour">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ret.jpg" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <TextField fx:id="search1" layoutX="231.0" layoutY="400.0" promptText="search" />
+      <ImageView fx:id="img2" fitHeight="150.0" fitWidth="200.0" layoutX="443.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

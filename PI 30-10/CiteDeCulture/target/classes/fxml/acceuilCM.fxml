@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.AcceuilCMController">
+   <children>
+      <VBox prefHeight="434.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="btnShMon" mnemonicParsing="false" onAction="#showMonument" prefHeight="434.0" prefWidth="200.0" style="-fx-border-color: #FFFFFF;" text="SOME MONUMENTS">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@IconM/human-eye-shape.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="btnARequest" mnemonicParsing="false" onAction="#GoToARequest" prefHeight="434.0" prefWidth="200.0" style="-fx-border-color: #FFFFFF;" text="SEND VISIT REQUEST">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@IconM/send.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="btnMyReq" mnemonicParsing="false" onAction="#GoToMyReq" prefHeight="434.0" prefWidth="200.0" style="-fx-border-color: #FFFFFF;" text="MY REQUESTS">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@IconM/application.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="btnSC" mnemonicParsing="false" onAction="#GoToSC" prefHeight="434.0" prefWidth="200.0" style="-fx-border-color: #FFFFFF;" text="SEND CLAIM">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@IconM/send-message.png" />
+                     </image></ImageView>
+               </graphic></Button>
+            <Button fx:id="btnHome" mnemonicParsing="false" onAction="#goToCHome" prefHeight="434.0" prefWidth="200.0" style="-fx-border-color: #FFFFFF;" text="EXIT">
+               <graphic>
+                  <ImageView fitHeight="41.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@IconM/logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+      </VBox>
+      <ImageView fitHeight="434.0" fitWidth="653.0" layoutX="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@BG/m5.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="221.0" layoutY="14.0" text="WELCOME TO OUR MUSEUM" textFill="#0a0a0a">
+         <font>
+            <Font name="Jokerman" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="649.0" prefWidth="813.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.AjoutereventController">
+   <children>
+      <ImageView fitHeight="563.0" fitWidth="872.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../../images/cite.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="484.0" fitWidth="796.0" layoutX="18.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@francais_image2_61487_1521882197.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="322.0" text="Add Event" textFill="BLUE">
+         <font>
+            <Font name="Jokerman" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="199.0" layoutY="80.0" text="Name Event" textFill="BLUE">
+         <font>
+            <Font name="Arial Narrow Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="199.0" layoutY="146.0" text="Category Event" textFill="BLUE">
+         <font>
+            <Font name="Arial Narrow Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="151.0" layoutY="205.0" text="Number Of Available Places" textFill="BLUE">
+         <font>
+            <Font name="Arial Narrow Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="197.0" layoutY="269.0" text="Date Event" textFill="BLUE">
+         <font>
+            <Font name="Arial Narrow Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="214.0" layoutY="317.0" text="Hour" textFill="BLUE">
+         <font>
+            <Font name="Arial Narrow Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="209.0" layoutY="376.0" text="Poster" textFill="BLUE">
+         <font>
+            <Font name="Arial Narrow Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameevent" layoutX="320.0" layoutY="75.0" />
+      <TextField fx:id="category" layoutX="320.0" layoutY="141.0" />
+      <TextField fx:id="nbrplace" layoutX="320.0" layoutY="200.0" />
+      <DatePicker fx:id="date" layoutX="308.0" layoutY="264.0" />
+      <ComboBox fx:id="heuredebevent" layoutX="308.0" layoutY="313.0" prefWidth="150.0" />
+      <Button fx:id="addevent" layoutX="353.0" layoutY="514.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="60.0" text="Add" />
+      <Button fx:id="importE" layoutX="537.0" layoutY="456.0" mnemonicParsing="false" text="Import" />
+      <ImageView fx:id="imgview" fitHeight="150.0" fitWidth="200.0" layoutX="295.0" layoutY="358.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
